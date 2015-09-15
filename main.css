@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
+.navbar-default {
+  background-color: white;
+  border: none;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+.jumbotron .h1,
+.jumbotron h1 {
+  color: cyan;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.jumbotron {
+  background-color: white;
+}
+.btn-primary {
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+.btn-group-lg > .btn,
+.btn-lg {
+  border-radius: 57px;
+  padding: 21px 27px;
+}
+.btn-primary:hover {
+  background: white;
+  color: black;
+}
+.cyan {
+  color: cyan;
+}
+/*
+
+@buttonBackground: #006699;
+@buttonColor: #fff;
+@buttonPadding: 5px;
+
+.button{
+	background: @buttonBackground;
+	color: @buttonColor;
+	padding: @buttonPadding;
+	display: inline-block;
+}
+
+.jumbo-button{
+	.button; 
+	padding: @buttonPadding + 30;
+}
+
+.light-button{
+	.button;
+	background: @buttonBackground * 1.8; 
+}
+
+
+#welcome-banner{
+	font-size: 24px;
+	background: lightgreen;
+	font-family: impact;
+
+
+	@media screen{
+		@media (max-width: 768px){
+			font-size: 38px;
+			background: lightsteelblue;
+			margin: 30px;
+		}
+	}
+}
+
+
+
+#side-nav{
+	background: #333;
+	width: 100px;	
+
+	a:link, a:visited{
+		color: white;
+		display: block;
+		padding: 8px;
+	}
+
+	a:hover{
+		background: #777;
+	}
+}
+
+
+
+
+.panel{
+	border: 3px solid dodgerblue;
+	background: lightgreen;
+	margin: 10px;
+}
+
+.little-panel{
+	.panel;
+	font-size: 12px;
+	padding: 5px;
+}
+
+.big-panel{
+	.panel;
+	font-size: 32px;
+	padding: 20px;
+}*/
