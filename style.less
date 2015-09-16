@@ -7,12 +7,66 @@
 @antCyan: cyan;
 
 
+@gray-darker:  lighten(#000, 13.5%); // #222
+@gray-dark:    lighten(#000, 20%);   // #333
+@gray:         lighten(#000, 33.5%); // #555
+@gray-light:   lighten(#000, 46.7%); // #777
+@gray-lighter: lighten(#000, 93.5%); // #eee
+
+body {
+	color: @gray-darker;
+}
+
+a {
+	color: @gray-dark;
+}
+
+a:hover {
+    transition-duration: .5s;
+}
 
 .navbar-default {
 	background-color: @antNavBar;
 	border: none;
 	text-transform: uppercase;
 	margin: 15px 0;
+	letter-spacing: 2px;
+}
+
+.navbar-default .navbar-nav {
+	a:link, a:visited{
+		color: @gray-dark!important;
+
+	}
+	a:hover{
+		color: @gray!important;
+	}
+}
+
+
+#side-nav{
+	background: #333;
+	width: 100px;	
+
+	a:link, a:visited{
+		color: white;
+		display: block;
+		padding: 8px;
+	}
+
+	a:hover{
+		background: #777;
+	}
+}
+
+
+
+.navbar-default .navbar-toggle { border:none;}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover { background: @antCyan;border:none;}
+
+.jumbotron {
+//	background: white url('images/sky2.jpg') no-repeat ;
+//	background-size: cover;
 }
 
 .jumbotron .h1, .jumbotron h1 { 
@@ -37,11 +91,23 @@
 
 }
 
-.btn-primary:hover{background:@antWhite; color: @antBlack;}
+.btn-primary:hover{background:@antWhite!important; color: @antBlack;}
+
+.btn-primary.focus, .btn-primary:focus{ background: @antWhite; color:@antBlack; }
 
 .cyan { color: @antCyan;}
 
-/*
+
+
+[id^=section] {
+    margin-bottom: 100%;
+}
+
+
+
+
+
+/*    REMOVE ALL THIS LATER #########################
 
 @buttonBackground: #006699;
 @buttonColor: #fff;

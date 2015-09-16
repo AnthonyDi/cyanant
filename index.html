@@ -11,13 +11,52 @@
 
     <title>CYAN ANT</title>
 
+
+<!-- JQuery placed at top otherwise anchor.js doesn't work-->
+        <script src="http://code.jquery.com/jquery-2.1.0.js" type="text/javascript"></script>
+        <script type="text/javascript" src="anchor.js"></script>
+        
+        <style>
+                [id^=section] {
+                        margin-bottom: 100%;
+                }
+        </style>
+
+
+        <script type="text/javascript">
+$(function () {
+    $('a[href*=#]').anchor({
+        foo: 'bar'
+    });
+});
+</script>
+     
+
+
+
+
+
+<!--
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>    
+-->
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
         <!-- <base href="/home/badr/Documents/wbdsn/CYANANT/site/"/>-->
         <link rel="stylesheet" href="main.css" type="text/css" >
 
-  </head>
+
+<!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+-->
+
+
+
+
+
+
+ </head>
 
 
   <body>
@@ -36,9 +75,9 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <!----<li class="active"><a href="#">Home</a></li>-->
-            <li><a href="#about">About</a></li>
-                <li><a href="#">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#section1">Work</a></li>
+            <li><a href="#section2">About</a></li>
+            <li><a href="#section3">Contact</a></li>
             <!--<li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -65,8 +104,8 @@
       <div class="jumbotron">
       <div class="container text-center">
         <h1>Cyan Ant<br>Web Development</h1>
-        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>To see the difference between static and fixed top navbars, just scroll.</p>
+        <h2>Web Developer and Designer</h2><br>
+        <!--<p> + <a href="#">this...</a></p>  For Illustraion. Add later-->
         <p>
           <a class="btn btn-lg btn-primary" href="#" role="button">Get in touch</a>
         </p>
@@ -76,29 +115,75 @@
 
     <div class="container">
       <!-- Example row of columns -->
-      <div class="row">
+      <div class="row text-center">
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2>Web Development</h2>
+          <p>Standards compliant sites built with SEO in mind. HTML5, CSS3. </p>
+          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
         </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2>Web Design</h2>
+          <p>UI blah blah</p>
+          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
        </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2>About</h2>
+          <p>Over 8 years experience in web, I have worked for the BBC, Spire Healthcare and many others.</p>
+          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
         </div>
       </div>
+
+
+
+
+    <section id="section1">
+        <h2>Work</h2>
+        <p><a href="#section2">Jump to next section</a></p>
+
+        <br><br><br><br><br>
+
+
+    </section>
+    <section id="section2">
+        <h2>About</h2>
+
+        About blach blah
+
+
+<p><a href="#section3">Jump to next section</a></p>
+
+        <br><br><br><br><br>
+
+        
+    </section>
+    <section id="section3">
+        <h2>Contact</h2>
+        <p><a href="#section1">Jump to work</a></p>
+        </section>
+
+<!--
+    <section id="section1">
+        <h3>This is the first section</h3>
+        <p><a href="#section2">Jump to next section</a></p>
+    </section>
+    <section id="section2">
+        <h3>You are at Section 2 now</h3>
+        <p><a href="#section3">Jump to next section</a></p>
+    </section>
+    <section id="section3">
+        <h3>You are at Section 3 now</h3>
+        <p><a href="#section1">Jump to first section</a></p>
+        </section>
+-->
+
+
+
 
       <hr>
 
       <footer>
         <p class="cyan">&copy; Cyan Ant</p>
-        <p class="text-right">Cyan Ant uses cookies and analytics trackers</p>
+        <p>Cyan Ant uses cookies and analytics trackers</p>
       </footer>
     </div> <!-- /container -->
 
@@ -108,10 +193,13 @@
     tpcorript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="ie10-viewport-bug-workaround.js"></script>
+
+
+
   </body>
 </html>
