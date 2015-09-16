@@ -74,9 +74,6 @@ a:hover {
 .cyan {
   color: cyan;
 }
-[id^=section] {
-  margin-bottom: 100%;
-}
 /*    REMOVE ALL THIS LATER #########################
 
 @buttonBackground: #006699;
