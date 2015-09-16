@@ -45,7 +45,7 @@ a:hover {
 }
 .jumbotron .h1,
 .jumbotron h1 {
-  color: cyan;
+  color: #333333;
   text-transform: uppercase;
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -73,6 +73,15 @@ a:hover {
 }
 .cyan {
   color: cyan;
+}
+#ant {
+  transform: translate3d(0px, 0px, 0px);
+  transition: transform 0.5s ease 0s;
+  display: inline;
+  margin-right: 20px;
+}
+#ant:hover {
+  transform: translate3d(0px, -5px, 0px);
 }
 /*    REMOVE ALL THIS LATER #########################
 
